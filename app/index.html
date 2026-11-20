@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI: all 55 PS5 trophies</title>
+<meta name="description" content="Offline guide and tracker for the 55 Grand Theft Auto VI trophies on PlayStation 5: every official name, description and grade, a cited guide for each, a platinum roadmap, missable flags, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every trophy, its official name, description and grade, a guide in our own words with its sources, a road to the platinum — and a checklist that remembers what you have earned. Works fully offline: no account, no network, nothing leaves your browser.</p>
+    <div class="progress-wrap" aria-label="Trophy progress">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+      <p class="progress-grades" id="progressGrades"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Tracker controls">
+    <div class="control-row">
+      <label class="control-label">Kind
+        <span class="chips" id="kindChips" role="group" aria-label="Filter by kind"></span>
+      </label>
+      <label class="control-label">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="control-label">Search
+        <input id="searchBox" type="search" placeholder="Trophy or mission name…" autocomplete="off">
+      </label>
+    </div>
+    <div class="control-row">
+      <label class="toggle"><input id="spoilerToggle" type="checkbox"> <span>Hide story spoilers — story trophies stay hidden until earned</span></label>
+      <label class="toggle"><input id="hideEarnedToggle" type="checkbox"> <span>Hide earned</span></label>
+      <label class="toggle"><input id="missableOnlyToggle" type="checkbox"> <span>Missable only</span></label>
+      <span class="spacer"></span>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button" class="quiet">Reset</button>
+    </div>
+    <p class="control-note" id="filterNote"></p>
+  </section>
+
+  <section aria-label="Trophy checklist">
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyState" class="empty-state" hidden></p>
+  </section>
+
+  <section id="roadmap" class="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Road to the platinum</h2>
+    <p class="section-note">One playthrough, about 200 hours, no online trophies, no difficulty setting, no mission replay. Cheats disable trophies and saving, so keep them off. Keep a manual save at the start and end of each chapter.</p>
+    <div class="missable-callout" role="note">
+      <strong>Watch out — one possibly missable trophy.</strong>
+      <span><b>Positive Mental Attitude</b> (meditate at every spot) may need Lucia&rsquo;s Chapter 1 balcony meditation at Jason&rsquo;s house, which disappears after Chapter 1. Do it the morning after the mission <i>Down to Earth</i>: talk to Lucia in the kitchen, follow her to the balcony, choose Accept. Every other trophy can be earned in free roam after the story.</span>
+    </div>
+    <div id="roadmapStages" class="roadmap-stages"></div>
+  </section>
+
+  <footer class="about">
+    <h2>About this guide</h2>
+    <p>Names, descriptions and grades are shown exactly as PlayStation publishes them. Every guide is written for this page in our own words; each one names its sources beside it, so you can check where every fact came from — a location or step with no source earns no trust, so none is given without one. The one trophy whose method is still unconfirmed at launch, <i>Bad Luck, I Guess</i>, says so plainly instead of guessing. Progress is stored only in this browser&rsquo;s localStorage; export and import move it as a file. No Rockstar artwork, logo or game screenshot is used anywhere: the look is our own.</p>
+    <p class="sources-line">List and roadmap facts checked against the PowerPyx trophy guide and 100% checklist, GTABase, Push Square, KeenGamer, Beebom and GTASpotter (November 2026). Sources are linked under each trophy.</p>
+  </footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
